@@ -1,0 +1,67 @@
+@import url("https://fonts.googleapis.com/css2?family=Oxygen:wght@300;400;700&display=swap");
+/*   color variables */
+/*   border radius */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Oxygen, sans-serif;
+  margin: 2rem;
+  background-color: #c0cbe5;
+}
+
+.wrapper {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(12rem, 16rem));
+  gap: 2rem;
+  justify-content: center;
+}
+
+.card {
+  overflow: hidden;
+  box-shadow: 0 2px 20px #e1e5ee;
+  border-radius: .6rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  cursor: pointer;
+  transition: transform 200ms ease-in;
+}
+.card__image {
+  height: 14rem;
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.card__title {
+  padding: .8rem;
+}
+.card__description {
+  padding: 0 1rem;
+}
+.card__btn {
+  padding: 1rem;
+  font-family: inherit;
+  font-weight: bold;
+  border-radius: 2rem;
+  font-size: 1rem;
+  margin: 1rem;
+  border: 2px solid #004bd5;
+  background: transparent;
+  color: #004bd5;
+  transition: background 200ms ease-in, 
+  color 200ms ease-in;
+}
+.card:hover {
+  transform: scale(1.02);
+}
+
+.card:hover .card__btn {
+  background: #004bd5;
+  color: #fff;
+}/*# sourceMappingURL=style.css.map */
